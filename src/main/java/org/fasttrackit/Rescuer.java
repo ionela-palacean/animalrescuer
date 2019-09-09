@@ -8,7 +8,6 @@ public class Rescuer extends Animal{
 void main (String name) {
 
 
-
 }
 
 }
