@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Pet {
     String petType;
     String name;
@@ -12,6 +14,7 @@ public class Pet {
 
     Rescuer rescuer;
     Veterinarian veterinary;
+
 
     public double getHungryLevel(double hungryLevel) {
 
@@ -32,7 +35,31 @@ public class Pet {
             System.out.println(newHungryLevel);
 
         }
-    return newHungryLevel;
+        return newHungryLevel;
     }
+
+
+    public double getFavoriteActivity(double mood) {
+
+        System.out.println( name+ " will go in the park with " + rescuer.name + " and the pet will be more happy than now ");
+        mood++;
+        double newMood=mood;
+        System.out.println(" New mood is"+ newMood);
+
+        for (int i=0; newMood<10; i++) {
+            if (newMood < 10) ;
+            mood++;
+
+            newMood = mood;
+
+            System.out.println(newMood);
+        }
+        System.out.println("Pet finally satisfied");
+        return newMood;
+
+
+    }
+
+
 }
 

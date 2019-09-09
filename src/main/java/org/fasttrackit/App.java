@@ -13,8 +13,8 @@ public class App
                 pet.healtCondition=10;
                 pet.favoriteFood="Purina";
                 pet.favoriteActivity="walk";
-                pet.hungryLevel=5;
-                pet.mood=3;
+                pet.hungryLevel=10;
+                pet.mood=1;
 
 // Pet pet2= new Pet();
 // pet.name="Dixon";
@@ -40,7 +40,7 @@ public class App
                System.out.println(pet.hungryLevel);
                // System.out.println(pet.rescuer);
                // System.out.println(pet.veterinary);
-                pet.getHungryLevel(5);
-
+                pet.getHungryLevel(pet.hungryLevel);
+                pet.getFavoriteActivity(pet.mood);
             }
         }
