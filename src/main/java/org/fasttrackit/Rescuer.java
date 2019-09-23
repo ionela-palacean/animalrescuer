@@ -1,13 +1,14 @@
 package org.fasttrackit;
 
-import org.w3c.dom.ls.LSOutput;
-
-public class Rescuer extends Animal{
+public class Rescuer {
     String name;
     Integer walletLevel;
-void main (String name) {
 
-
+public void feedingAnimal(Pet pet) {
+pet.hungryLevel --;
 }
 
 }
+
+
+

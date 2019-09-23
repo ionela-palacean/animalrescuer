@@ -1,7 +1,5 @@
 package org.fasttrackit;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class Pet {
     String petType;
     String name;

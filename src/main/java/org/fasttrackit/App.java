@@ -1,10 +1,11 @@
 package org.fasttrackit;
 
 
+import java.util.concurrent.locks.ReadWriteLock;
+
 public class App
 {
         public static  void main(String[] args )
-            // this is the one-line comment
 
             {
                 Pet pet = new Pet();
@@ -16,6 +17,9 @@ public class App
                 pet.hungryLevel=10;
                 pet.mood=1;
 
+Rescuer rescuer=new Rescuer();
+rescuer.feedingAnimal(pet);
+
 // Pet pet2= new Pet();
 // pet.name="Dixon";
 // pet.age=6;
@@ -25,9 +29,9 @@ public class App
 // pet.hungryLevel=1;
 // pet.mood=3;
 
-                Rescuer rescuer=new Rescuer();
-                rescuer.name="Andrei";
-                rescuer.walletLevel=5000;
+            //    Rescuer rescuer=new Rescuer();
+               rescuer.name="Andrei";
+               rescuer.walletLevel=5000;
 
                 Veterinarian veterinary=new Veterinarian();
                 veterinary.name="Vlad";
