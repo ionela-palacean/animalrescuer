@@ -1,24 +1,28 @@
 package org.fasttrackit;
 
 
-import java.util.concurrent.locks.ReadWriteLock;
 
-public class App
-{
-        public static  void main(String[] args )
 
-            {
-                Pet pet = new Pet();
-                pet.name = "Carlitos";
-                pet.age=25;
-                pet.healtCondition=10;
-                pet.favoriteFood="Purina";
-                pet.favoriteActivity="walk";
-                pet.hungryLevel=10;
-                pet.mood=1;
+ public class App {
+     public static void main(String[] args) {
 
-Rescuer rescuer=new Rescuer();
-rescuer.feedingAnimal(pet);
+
+         Game game=new Game();
+         Rescuer rescuer=new Rescuer();
+         game.start();
+         //rescuer.feedingAnimal();
+
+
+
+        //animal.setName("Carlitos");
+        //animal.setAge(25);
+        //animal.setHealthCondition(10);
+        //animal.setFavoriteFood("Purina");
+        //animal.setFavoriteActivity("walk");
+        //animal.setHungryLevel(8);
+        //animal.setMood(1);
+
+
 
 // Pet pet2= new Pet();
 // pet.name="Dixon";
@@ -29,22 +33,22 @@ rescuer.feedingAnimal(pet);
 // pet.hungryLevel=1;
 // pet.mood=3;
 
-            //    Rescuer rescuer=new Rescuer();
-               rescuer.name="Andrei";
-               rescuer.walletLevel=5000;
+         //Rescuer rescuer=new Rescuer();
+         // rescuer.name="Andrei";
+         // rescuer.walletLevel=5000;
 
-                Veterinarian veterinary=new Veterinarian();
-                veterinary.name="Vlad";
+         //  Veterinarian veterinary=new Veterinarian();
+         //  veterinary.name="Vlad";
 
 
-                pet.rescuer=rescuer;
-                pet.veterinary=veterinary;
+         // animal.rescuer=rescuer;
+         //animal.veterinary=veterinary;
 //pet2=pet; //suprascriere;
-               System.out.println(pet.name);
-               System.out.println(pet.hungryLevel);
-               // System.out.println(pet.rescuer);
-               // System.out.println(pet.veterinary);
-                pet.getHungryLevel(pet.hungryLevel);
-                pet.getFavoriteActivity(pet.mood);
-            }
-        }
+         // System.out.println(animal.name);
+         //  System.out.println(animal.hungryLevel);
+         // System.out.println(pet.rescuer);
+         // System.out.println(pet.veterinary);
+         // animal.getHungryLevel(animal.hungryLevel);
+         // animal.getFavoriteActivity(animal.mood);
+     }
+ }
